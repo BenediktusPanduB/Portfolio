@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    background-color: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(47,47,49,1) 70%, rgba(69,69,71,1) 100%);
+}
+
+#navbar-link a:hover{
+    color: crimson;
+}
+
+.container-fluid{
+    min-height: 94vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.landing img{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    
+}
+
+.landing img:hover{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+@media (max-width: 800px ){
+    .landing img{
+        display: none;
+    }
+}
+
+#landingpage{
+    background-color: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(47,47,49,1) 70%, rgba(69,69,71,1) 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+#landingpage .landing{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: start;
+}
+
+#landingpage h1{
+    display: block;
+    width: fit-content;
+    font-size: 2.5rem;
+    position: relative;
+    color: #ffffff;
+}
+#landingpage p{
+    display: block;
+    width: fit-content;
+    position: relative;
+    color: #ffffff;
+}
+
+#landingpage span{
+    color: crimson;
+}
+
+#landingpage .portfolio{
+    display: inline-block;
+    padding: 10px 15px;
+    letter-spacing: .1rem;
+    font-size: .8rem;
+    color: crimson;
+    text-transform: uppercase;
+}
+
+#landingpage .portfolio:hover{
+    color: white;
+    background-color: crimson;
+}
+
+.project{
+    min-height: 94vh;
+    padding:50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+#project span{
+    color: crimson;
+}
+
+#project .project{
+    padding: 40px 30px 0px 30px;
+    flex-direction: column;
+    text-align: center;
+}
+
+#project .project-header{
+    margin-bottom: 50px;
+}
+
+#project .project-item img{
+    border-radius: 5%;
+    -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+} 
+
+#project .project-item img:hover{
+  transform: scale(1.01); 
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  
+} 
+
